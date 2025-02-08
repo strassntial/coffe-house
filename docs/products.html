@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="min-h-screen relative bg-cover bg-center bg-fixed bg-no-repeat"
+    style="
+      background-image: linear-gradient(
+          rgba(47, 23, 15, 0.65),
+          rgba(47, 23, 15, 0.65)
+        ),
+        url(../img/bg.jpg);">
+        <!-- Header -->
+         <div class="relative p-0 md:py-20 md:px-0 md:text-center">
+            <div class="hidden md:block pb-10 font-Raleway uppercase">
+                <h2 class=" text-primary  font-extrabold  text-3xl ">fresh coffee in the morning</h2>
+                <span class=" text-yellow-50 font-thin text-7xl">Coffe House</span>
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar md:absolute md:bottom-0">
+                <ul class="hidden h-20 text-gray-1 font-Raleway font-bold space-x-14 mx-auto  md:flex md:w-1/2 md:justify-center md:items-center ">
+                    <li>
+                        <a class="hover:text-primary-light" href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary-light" href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary-light" href="products.html">PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary-light" href="store.html">STORE</a>
+                    </li>
+                </ul>
+                <div class="flex justify-between items-center w-full p-4  md:hidden">
+                    <h3 class="text-primary font-Raleway font-extrabold uppercase text-2xl">Start Coffe</h3>
+                    <button id="nav-btn" class="bg-transparent size-11  stroke-primary border-primary border-[1px]  rounded-lg  md:hidden" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"  >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Slidebar -->
+        <aside id="slidebar" class="hidden navbar w-full transition-all md:hidden">
+            <ul class="px-4 pb-4 space-y-2 text-gray-1 font-Raleway font-bold">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="products.html">PRODUCTS</a>
+                </li>
+                <li>
+                    <a href="store.html">STORE</a>
+                </li>
+            </ul>
+        </aside>
+        </div>
+
+        <!-- Products -->
+            <section class="section relative pb-0">
+                <article class=" md:flex md:items-center pb-20 md:py-20">
+                    <div class="flex flex-col md:items-start">
+                        <div class="text-center px-12 section-title section text-primary-light w-full h-auto ">
+                            <h2>Blended to Perfection</h2>
+                            <span>Coffees & Teas</span>
+                        </div>
+                        <div class="card w-full h-auto max-w-[35rem] ">
+                            <p>We take pride in our work, and it shows. Every time you order a beverage from us, we guarantee that it will be an experience worth having. Whether it's our world famous Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of speciality sourced black coffee, you will be coming back for more.</p>
+                        </div>
+                    </div>
+                    <img src="../img/products-01.jpg" class="animate-aboutImage -z-10 md:absolute md:right-0 object-cover w-[40rem] h-[30rem]  md:w-[50rem] md:h-[40rem]">
+                </article>
+                <article class="md:flex md:items-center md:py-20 md:flex-row-reverse">
+                    <div class="flex flex-col items-end">
+                        <div class="text-center px-12 section-title section-title section text-primary-light w-full h-auto max-w-[35rem]  ">
+                            <h2>Delicious Treats, Good Eats</h2>
+                            <span>Bakery & Kitchen</span>
+                        </div>
+                        <div class="card w-full h-auto max-w-[35rem] ">
+                            <p>Our seasonal menu features delicious snacks, baked goods, and even full meals perfect for breakfast or lunchtime. We source our ingredients from local, oragnic farms whenever possible, alongside premium vendors for specialty goods.</p>
+                        </div>
+                    </div>
+                    <img src="../img/products-02.jpg" class="animate-aboutImage md:absolute md:left-0 -z-10 object-cover w-[40rem] h-[30rem]  md:w-[50rem] md:h-[40rem]">
+                </article>
+                <article class=" md:flex md:items-center pt-20 md:pb-20">
+                    <div class="flex flex-col items-start">
+                        <div class="text-center px-12 section-title section-title section text-primary-light section-title w-full h-auto max-w-[35rem] ">
+                            <h2>From Around the World</h2>
+                            <span>Bulk Speciality Blends</span>
+                        </div>
+                        <div class="card w-full h-auto max-w-[35rem] ">
+                            <p>Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p>
+                        </div>
+                    </div>
+                    <img src="../img/products-03.jpg" class="animate-aboutImage md:absolute md:right-0 -z-10 object-cover w-[40rem] h-[30rem]  md:w-[50rem] md:h-[40rem]">
+                </article>
+                
+            </section>
+            
+           <!-- Footer -->
+           <footer class="footer ">
+            Copyright © Your Website 2024
+             </footer>
+        
+</body>
+<script src="./js/app.js"></script>
+</html>
+

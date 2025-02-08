@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="min-h-screen relative bg-cover bg-center bg-fixed bg-no-repeat"
+    style="
+      background-image: linear-gradient(
+          rgba(47, 23, 15, 0.65),
+          rgba(47, 23, 15, 0.65)
+        ),
+        url(../img/bg.jpg);">
+        <!-- Header -->
+         <div class="relative p-0 md:py-20 md:px-0 md:text-center">
+            <div class="hidden md:block pb-10 font-Raleway uppercase">
+                <h2 class=" text-primary  font-extrabold  text-3xl ">fresh coffee in the morning</h2>
+                <span class=" text-yellow-50 font-thin text-7xl">Coffe House</span>
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar md:absolute md:bottom-0">
+                <ul class="hidden h-20 text-gray-1 font-Raleway font-bold space-x-14 mx-auto  md:flex md:w-1/2 md:justify-center md:items-center ">
+                    <li>
+                        <a class="hover:text-primary-light" href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary-light" href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary-light" href="products.html">PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary-light" href="store.html">STORE</a>
+                    </li>
+                </ul>
+                <div class="flex justify-between items-center w-full p-4  md:hidden">
+                    <h3 class="text-primary font-Raleway font-extrabold uppercase text-2xl">Start Coffe</h3>
+                    <button id="nav-btn" class="bg-transparent size-11  stroke-primary border-primary border-[1px]  rounded-lg  md:hidden" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"  >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Slidebar -->
+        <aside id="slidebar" class="hidden navbar w-full transition-all md:hidden">
+            <ul class="px-4 pb-4 space-y-2 text-gray-1 font-Raleway font-bold">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="products.html">PRODUCTS</a>
+                </li>
+                <li>
+                    <a href="store.html">STORE</a>
+                </li>
+            </ul>
+        </aside>
+        </div>
+
+        <!-- Store -->
+         <section class=" section back-primary h-[60rem] ">
+            <article class="card w-auto mx-auto outlinee outline-primary md:w-3/4">
+                <div class="section-title">
+                    <h2>Come On In</h2>
+                    <span>We're Open</span>
+                </div>
+                <ul class="my-5 text-start w-auto mx-auto font-Lora text-sm italic space-y-5 divide-y-[0.5px] divide-primary md:text-lg md:w-1/2">
+                    <li class="hover:-translate-x-4 transition-all">Sunday
+                        <span class="float-end">Closed</span>
+                    </li>
+                    <li class="hover:-translate-x-4 transition-all">Monday
+                        <span class="float-end">7:00 AM to 8:00 PM</span>
+                    </li>
+                    <li class="text-primary font-bold hover:-translate-x-4 transition-all">Tuesday
+                        <span class="float-end">7:00 AM to 8:00 PM</span>
+                    </li>
+                    <li class="hover:-translate-x-4 transition-all">Wednesday
+                        <span class="float-end">7:00 AM to 8:00 PM</span>
+                    </li>
+                    <li class="hover:-translate-x-4 transition-all">Thursday
+                        <span class="float-end">7:00 AM to 8:00 PM</span>
+                    </li>
+                    <li class="hover:-translate-x-4 transition-all">Friday 
+                        <span class="float-end">7:00 AM to 8:00 PM</span>
+                    </li>
+                    <li class="hover:-translate-x-4 transition-all">Saturday
+                        <span class="float-end">9:00 AM to 5:00 PM</span>
+                    </li>
+                </ul>
+                <div class="mt-10 font-Lora">
+                    <h2 class=" font-extrabold uppercase text-base">1116 Orchard Street </h2>
+                    <span>Golden Valley, Minnesota</span>
+                </div>
+                <div class="mt-10">
+                    <span class="text-sm">Call Anytime</span>
+                    <h2>(317) 585-8468</h2>
+                </div>
+            </article>
+         </section>
+
+         <!-- Form -->
+         <section class="section">
+            <div class="section-title text-primary-light">
+                <h2>booking </h2>
+                <span>Resarve a table</span>
+            </div>
+            <article>
+                <form class="flex flex-col space-y-6 w-auto min-w-96 mx-auto p-8 md:w-1/2 border-primary-light-2 border-4 rounded-radius">
+                    <input type="text" placeholder="Name" class="form-input">
+                    <input type="email" placeholder="Email" class="form-input">
+                    <input type="number" placeholder="Number" class="form-input">
+                    <textarea placeholder="Massage" class="form-input  py-4 h-48"></textarea>
+                    <button class="btn rounding  md:w-1/4 mt-5">send massage</button>
+                </form>
+                
+            </article>
+         </section>
+
+          <!-- Footer -->
+          <footer class="footer ">
+            Copyright © Your Website 2024
+             </footer>
+        
+</body>
+<script src="./js/app.js"></script>
+</html>
+

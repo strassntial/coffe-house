@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body
+    class="min-h-screen relative bg-cover bg-center bg-fixed bg-no-repeat"
+    style="
+      background-image: linear-gradient(
+          rgba(47, 23, 15, 0.65),
+          rgba(47, 23, 15, 0.65)
+        ),
+        url(../img/bg.jpg);">
+    <!-- Header -->
+    <div class="relative p-0 md:py-20 md:px-0 md:text-center">
+      <div class="hidden md:block pb-10 font-Raleway uppercase">
+        <h2 class="text-primary font-extrabold text-3xl">
+          fresh coffee in the morning
+        </h2>
+        <span class="text-yellow-50 font-thin text-7xl">Coffe House</span>
+      </div>
+      <!-- Navbar -->
+      <nav class="navbar md:absolute md:bottom-0">
+        <ul
+          class="hidden h-20 text-gray-1 font-Raleway font-bold space-x-14 mx-auto md:flex md:w-1/2 md:justify-center md:items-center"
+        >
+          <li>
+            <a class="hover:text-primary-light" href="index.html">HOME</a>
+          </li>
+          <li>
+            <a class="hover:text-primary-light" href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a class="hover:text-primary-light" href="products.html"
+              >PRODUCTS</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-primary-light" href="store.html">STORE</a>
+          </li>
+        </ul>
+        <div class="flex justify-between items-center w-full p-4 md:hidden">
+          <h3
+            class="text-primary font-Raleway font-extrabold uppercase text-2xl"
+          >
+            Start Coffe
+          </h3>
+          <button
+            id="nav-btn"
+            class="bg-transparent size-11 stroke-primary border-primary border-[1px] rounded-lg md:hidden"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <!-- Slidebar -->
+      <aside id="slidebar" class="hidden navbar w-full md:hidden">
+        <ul class="px-4 pb-4 space-y-2 text-gray-1 font-Raleway font-bold">
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="products.html">PRODUCTS</a>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Intro -->
+    <section class="section">
+      <div class="relative space-y-3 lg:flex lg:flex-row-reverse">
+        <img
+          src="../img/intro.jpg"
+          class="rounded-lg overflow-hidden lg:w-3/4"
+        />
+        <article
+          class="card w-auto h-auto lg:absolute lg:left-0 lg:top-11 lg: lg:max-w-[35rem] lg:h-80"
+        >
+          <div class="section-title">
+            <h2>Fresh Coffee</h2>
+            <span>Worth Drinking</span>
+          </div>
+          <p class="pb-7">
+            Every cup of our quality artisan coffee starts with locally sourced,
+            hand picked ingredients. Once you try it, our coffee will be a
+            blissful addition to your everyday morning routine - we guarantee
+            it!
+          </p>
+          <button class="btn rounding">visit us today!</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Promise -->
+    <section class="section back-primary">
+      <article class="card max-w-5xl mx-auto relative outlinee outline-primary">
+        <div class="section-title">
+          <h2>Our Promise</h2>
+          <span>To You</span>
+        </div>
+        <p>
+          When you walk into our shop to start your day, we are dedicated to
+          providing you with friendly service, a welcoming atmosphere, and above
+          all else, excellent products made with the highest quality
+          ingredients. If you are not satisfied, please let us know and we will
+          do whatever we can to make things right!
+        </p>
+      </article>
+    </section>
+
+    <!-- Menu -->
+    <div class="section-title section text-primary-light mb-16">
+      <h2>our menu</h2>
+      <span>popular menu</span>
+    </div>
+    <section
+      class="section space-y-20 md:grid md:grid-cols-2 md:gap-20 md:space-y-0"
+    >
+      <article class="menu rounding">
+        <span class="absolute -top-16 right-[50%] translate-x-[50%]">
+          <img src="../img/menu-1.png" class="mx-auto" />
+        </span>
+        <div class="space-y-3 mt-4 font-Lora">
+          <h3 class="font-semibold uppercase">our special coffee</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+            sed.
+          </p>
+          <h1>$8.99</h1>
+        </div>
+      </article>
+      <article class="menu rounding">
+        <span class="absolute -top-16 right-[50%] translate-x-[50%]">
+          <img src="../img/menu-2.png" class="mx-auto" />
+        </span>
+        <div class="space-y-3 mt-4 font-Lora">
+          <h3 class="font-semibold uppercase">our special coffee</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+            sed.
+          </p>
+          <h1>$8.99</h1>
+        </div>
+      </article>
+      <article class="menu rounding">
+        <span class="absolute -top-16 right-[50%] translate-x-[50%]">
+          <img src="../img/menu-3.png" class="mx-auto" />
+        </span>
+        <div class="space-y-3 mt-4 font-Lora">
+          <h3 class="font-semibold uppercase">our special coffee</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+            sed.
+          </p>
+          <h1>$8.99</h1>
+        </div>
+      </article>
+      <article class="menu rounding">
+        <span class="absolute -top-16 right-[50%] translate-x-[50%]">
+          <img src="../img/menu-4.png" class="mx-auto" />
+        </span>
+        <div class="space-y-3 mt-4 font-Lora">
+          <h3 class="font-semibold uppercase">our special coffee</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+            sed.
+          </p>
+          <h1>$8.99</h1>
+        </div>
+      </article>
+      <article class="menu rounding">
+        <span class="absolute -top-16 right-[50%] translate-x-[50%]">
+          <img src="../img/menu-5.png" class="mx-auto" />
+        </span>
+        <div class="space-y-3 mt-4 font-Lora">
+          <h3 class="font-semibold uppercase">our special coffee</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+            sed.
+          </p>
+          <h1>$8.99</h1>
+        </div>
+      </article>
+      <article class="menu rounding">
+        <span class="absolute -top-16 right-[50%] translate-x-[50%]">
+          <img src="../img/menu-6.png" class="mx-auto" />
+        </span>
+        <div class="space-y-3 mt-4 font-Lora">
+          <h3 class="font-semibold uppercase">our special coffee</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+            sed.
+          </p>
+          <h1>$8.99</h1>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">Copyright © Your Website 2024</footer>
+  </body>
+  <script src="./js/app.js"></script>
+</html>
