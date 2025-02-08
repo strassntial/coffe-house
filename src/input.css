@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar {
+    @apply bg-dark bg-opacity-90 w-screen text-primary-light;
+  }
+  .section {
+    @apply px-10 md:px-20 xl:px-32 text-center my-20;
+  }
+  .back-primary {
+    @apply bg-primary bg-opacity-75 py-20;
+  }
+  .card {
+    @apply bg-primary-light-2 rounded-lg p-12 text-center;
+  }
+  .card p {
+    @apply font-normal text-base;
+  }
+  .section-title {
+    @apply pb-10;
+  }
+  .section-title h2 {
+    @apply font-Raleway font-extrabold uppercase text-base;
+  }
+  .section-title span {
+    @apply font-Raleway font-thin uppercase text-5xl;
+  }
+  .footer {
+    @apply bg-dark bg-opacity-90 text-primary-light h-28 flex items-center justify-center;
+  }
+  .outlinee {
+    @apply outline outline-offset-4 outline-4;
+  }
+  .btn {
+    @apply bg-primary p-6 rounded-lg font-semibold text-black hover:bg-hover border-hover hover:border-primary-light;
+  }
+  .form-input {
+    @apply w-full h-10 rounded-lg px-4 bg-primary-light-2;
+  }
+  .menu {
+    @apply bg-hover relative p-8 border-primary-light;
+  }
+  .rounding {
+    @apply border-solid border-4 rounded-radius hover:border-dashed hover:rounded-radius-hover transition-all;
+  }
+}
